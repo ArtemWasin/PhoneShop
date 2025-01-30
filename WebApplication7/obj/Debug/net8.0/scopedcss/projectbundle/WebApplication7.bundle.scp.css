@@ -1,0 +1,120 @@
+/* _content/WebApplication7/Pages/Orders/Order.cshtml.rz.scp.css */
+.page-title[b-jk5ok3bsg6] {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-section[b-jk5ok3bsg6], .delivery-section[b-jk5ok3bsg6], .comment-section[b-jk5ok3bsg6] {
+    margin-bottom: 30px;
+}
+
+.payment-select[b-jk5ok3bsg6], .delivery-select[b-jk5ok3bsg6], .comment-textarea[b-jk5ok3bsg6] {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-textarea[b-jk5ok3bsg6] {
+    height: 100px;
+    resize: vertical;
+}
+
+.cart-section[b-jk5ok3bsg6] {
+    margin-bottom: 30px;
+}
+
+.cart-table[b-jk5ok3bsg6] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th[b-jk5ok3bsg6], .cart-table td[b-jk5ok3bsg6] {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th[b-jk5ok3bsg6] {
+    background-color: #f4f4f4;
+}
+
+.product-image[b-jk5ok3bsg6] {
+    width: 50px;
+    height: 50px;
+}
+
+.form-actions[b-jk5ok3bsg6] {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn[b-jk5ok3bsg6] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover[b-jk5ok3bsg6] {
+    background-color: #45a049;
+}
+/* _content/WebApplication7/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.image[b-0lpt38urcm]
+{
+}
+
+a.navbar-brand[b-0lpt38urcm] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-0lpt38urcm] {
+  color: #0077cc;
+}
+
+.btn-primary[b-0lpt38urcm] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-0lpt38urcm], .nav-pills .show > .nav-link[b-0lpt38urcm] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-0lpt38urcm] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-0lpt38urcm] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-0lpt38urcm] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-0lpt38urcm] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-0lpt38urcm] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

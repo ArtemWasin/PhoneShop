@@ -1,0 +1,64 @@
+﻿@page
+@model OrderModel
+@{
+    ViewData["Title"] = "Оформление заказа";
+}
+
+<h2 class="page-title">Оформление заказа</h2>
+
+<form method="post">
+    <div class="payment-section">
+        <h3>Выбор способа оплаты:</h3>
+        <select asp-for="PaymentType" class="payment-select">
+            <option value="card">Картой</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Наличные</option>
+        </select>
+    </div>
+
+    <div class="delivery-section">
+        <h3>Выбор способа доставки:</h3>
+        <select asp-for="DeliveryType" class="delivery-select">
+            <option value="courier">Курьером</option>
+            <option value="pickup">Самовывоз</option>
+            <option value="post">Почта</option>
+        </select>
+    </div>
+
+    <div class="comment-section">
+        <h3>Комментарий к заказу:</h3>
+        <textarea asp-for="Comment" class="comment-textarea"
+            placeholder="Ваши пожелания или комментарии к заказу..."></textarea>
+    </div>
+
+    <div class="cart-section">
+        <h3>Ваши товары:</h3>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Фото</th>
+                    <th>Название</th>
+                    <th>Цена за единицу</th>
+                    <th>Количество</th>
+                    <th>Итого</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.CartItems)
+                {
+                    <tr>
+                        <td><img src="@item.ImageUrl" alt="@item.ProductName" class="product-image" /></td>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice.ToString("C")</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.TotalPrice.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" class="submit-btn">Оформить заказ</button>
+    </div>
+</form>
